@@ -1,0 +1,43 @@
+var Main = {
+    methods: {
+      handleClick(row) {
+        console.log(row);
+      }
+    },
+
+    data() {
+      return {
+        tableData: [{
+          date: '',
+          name: '',
+          province: '',
+          city: '',
+          address: '',
+          zip: ''
+        }, {
+          date: '',
+          name: '',
+          province: '',
+          city: '',
+          address: '',
+          zip: ''
+        }, {
+          date: '',
+          name: '',
+          province: '',
+          city: '',
+          address: '',
+          zip: ''
+        }, {
+          date: '',
+          name: '',
+          province: '',
+          city: '',
+          address: '',
+          zip: ''
+        }]
+      }
+    }
+  }
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#app')
