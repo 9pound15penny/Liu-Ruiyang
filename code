@@ -1,0 +1,61 @@
+<script src="//unpkg.com/vue@2/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.15.13/lib/index.js"></script>
+<div id="app">
+<template>
+  <el-table
+    :data="tableData"
+    border
+    style="width: 100%">
+    <el-table-column
+      fixed
+      prop="date"
+      label="类别"
+      width="120">
+    </el-table-column>
+    <el-table-column
+      fixed
+      prop="date"
+      label="点位名称"
+      width="150">
+    </el-table-column>
+    <el-table-column
+      fixed
+      prop="date"
+      label="GPS"
+      width="120">
+    </el-table-column>
+    <el-table-column
+      prop="name"
+      label="项目"
+      width="120">
+    </el-table-column>
+    <el-table-column
+      prop="province"
+      label="上传文件"
+      width="150">
+    </el-table-column>
+    <el-table-column
+      prop="city"
+      label="上传时间"
+      width="150">
+    </el-table-column>
+    <el-table-column
+      prop="address"
+      label="审核状态"
+      width="150">
+    </el-table-column>
+    <el-table-column
+      prop="zip"
+      label="审核时间"
+      width="150">
+    </el-table-column>
+    <el-table-column
+      label="查看"
+      width="100">
+      <template slot-scope="scope">
+        <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
+      </template>
+    </el-table-column>
+  </el-table>
+</template>
+</div>
